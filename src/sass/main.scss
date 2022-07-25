@@ -1,0 +1,52 @@
+//BASE
+@import './base/base';
+
+//ABSTRACTS
+@import './abstracts/mixins';
+@import './abstracts/variables';
+
+.nav{
+    font-size: 2.3rem;
+    height: 6.8rem;
+    width: 100%;
+    color: $white;
+    background: $bg-big;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2rem;
+
+    &__logo{
+        padding-left: 4.5rem;
+    }
+
+    &__logo-img{
+        width: 10rem;
+        height: 3.7rem;
+        padding-bottom: .1rem;
+    }
+    &__search{
+        
+        &-form{
+            background: $bg-small;
+            width: 65rem;
+            height: 3.5rem;
+            display: flex;
+            align-items: center;
+            padding: .4rem 1.5rem;
+            border-radius: 100px;
+
+            & > input{
+                background: inherit;
+                border-style: none;
+                padding: .5rem;
+
+                &:active, &:focus{
+                    border-style: none;
+                    outline: none;
+                    color: white;
+                }
+            }
+        }
+    }
+}

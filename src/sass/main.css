@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.nav {
+  font-size: 2.3rem;
+  height: 6.8rem;
+  width: 100%;
+  color: white;
+  background: #171717;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem;
+}
+
+.nav__logo {
+  padding-left: 4.5rem;
+}
+
+.nav__logo-img {
+  width: 10rem;
+  height: 3.7rem;
+  padding-bottom: .1rem;
+}
+
+.nav__search-form {
+  background: #202124;
+  width: 65rem;
+  height: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .4rem 1.5rem;
+  border-radius: 100px;
+}
+
+.nav__search-form > input {
+  background: inherit;
+  border-style: none;
+  padding: .5rem;
+}
+
+.nav__search-form > input:active, .nav__search-form > input:focus {
+  border-style: none;
+  outline: none;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
