@@ -1,5 +1,4 @@
-main{
-    
+main{    
     .sectionmodal{
         margin: 3rem auto 0 auto;
         width: 40rem;
@@ -26,6 +25,7 @@ main{
         }
     }
 }
+
 .modalForm{
     
     & > input{
@@ -97,17 +97,58 @@ main{
 
 .divor{
     margin-top: 5.5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 
     &__hr{       
-        height: 3px;
-        width: 8rem;
-        background: #ffffff; /* Old browsers */
-background: -moz-linear-gradient(left,  #ffffff 0%, #2989d8 25%, #207cca 75%, #ffffff 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(25%,#2989d8), color-stop(75%,#207cca), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(left,  #ffffff 0%,#2989d8 25%,#207cca 75%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(left,  #ffffff 0%,#2989d8 25%,#207cca 75%,#ffffff 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(left,  #ffffff 0%,#2989d8 25%,#207cca 75%,#ffffff 100%); /* IE10+ */
-background: linear-gradient(left,  #ffffff 0%,#2989d8 25%,#207cca 75%,#ffffff 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+        height: 1.9px;
+        width: 5.8rem;
+        margin-top: 1.42rem;
+        
+
+        &1{
+            background: linear-gradient(to right, $bg-modal, rgba($white, .4));
+        }
+        &2{
+            background: linear-gradient(to left, $bg-modal, rgba($white, .4));
+        }
+        
+    }
+
+    &__span-or{
+        font-family: 'Palanquin', sans-serif;
+        font-size: 1.7rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin: 0 .4rem;
+        color: rgba($white, .3);
+
+    }
+}
+
+div{
+    .reg{
+        text-align: center;
+        font-family: 'Quicksand', sans-serif;
+        margin-top: 2.3rem;
+
+        &__span{
+
+            &-cmn{
+                font-size: 1.6rem;
+                word-spacing: .2rem;
+                line-height: 1rem;
+            }            
+            
+            &-first{
+                color: rgba($white, .6);
+            }
+            &-second{
+                color: $bg-modalLogin;
+                font-weight: 600;
+            }
+        }
+
     }
 }

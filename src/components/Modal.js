@@ -53,15 +53,15 @@ const Modal = () => {
 
             <button type="submit" className='modalForm__button'>Login</button>
             <div className="divor">
-              <div className="divor__hr"></div>
-              <span className="divor__span-or">OR</span>
-              <div className="divor__hr"></div>
+              <div className="divor__hr divor__hr1"></div>
+              <span className="divor__span-or">or</span>
+              <div className="divor__hr divor__hr2"></div>
             </div>
 
-            <p className="Reg">
-              <span className="reg__span-first">Don't have an account? </span>
-              <span className="reg__span-second">Create an account</span>
-            </p>
+            <div className="reg">
+              <span className="reg__span-cmn reg__span-first">Don't have an account? </span>
+              <span className="reg__span-cmn reg__span-second">Create an account</span>
+            </div>
 
           </form>
           

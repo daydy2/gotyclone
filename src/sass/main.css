@@ -307,23 +307,61 @@ main .sectionmodal__p-modalP {
 
 .divor {
   margin-top: 5.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .divor__hr {
-  height: 3px;
-  width: 8rem;
-  background: #ffffff;
-  /* Old browsers */
-  /* FF3.6+ */
-  /* Chrome,Safari4+ */
-  /* Chrome10+,Safari5.1+ */
-  /* Opera 11.10+ */
-  /* IE10+ */
-  background: -webkit-gradient(linear, left top, right top, from(#ffffff), color-stop(25%, #2989d8), color-stop(75%, #207cca), to(#ffffff));
-  background: linear-gradient(left, #ffffff 0%, #2989d8 25%, #207cca 75%, #ffffff 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 );
-  /* IE6-9 */
+  height: 1.9px;
+  width: 5.8rem;
+  margin-top: 1.42rem;
+}
+
+.divor__hr1 {
+  background: -webkit-gradient(linear, left top, right top, from(#454a57), to(rgba(255, 255, 255, 0.4)));
+  background: linear-gradient(to right, #454a57, rgba(255, 255, 255, 0.4));
+}
+
+.divor__hr2 {
+  background: -webkit-gradient(linear, right top, left top, from(#454a57), to(rgba(255, 255, 255, 0.4)));
+  background: linear-gradient(to left, #454a57, rgba(255, 255, 255, 0.4));
+}
+
+.divor__span-or {
+  font-family: 'Palanquin', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0 .4rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+div .reg {
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 2.3rem;
+}
+
+div .reg__span-cmn {
+  font-size: 1.6rem;
+  word-spacing: .2rem;
+  line-height: 1rem;
+}
+
+div .reg__span-first {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+div .reg__span-second {
+  color: #0467d0;
+  font-weight: 600;
 }
 
 .listLink {
