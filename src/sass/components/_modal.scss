@@ -2,7 +2,6 @@ main{
     .sectionmodal{
         margin: 3rem auto 0 auto;
         width: 40rem;
-        height: 54.6rem;
         color: $white;
         background: $bg-modal;
         padding: 1.5rem;
@@ -131,7 +130,7 @@ div{
     .reg{
         text-align: center;
         font-family: 'Quicksand', sans-serif;
-        margin-top: 2.3rem;
+        margin: 2.3rem 0;
 
         &__span{
 
@@ -150,5 +149,18 @@ div{
             }
         }
 
+    }
+}
+
+.nameInput{
+    display: inline-block !important;
+    width: 48% !important;
+    
+    &1{
+        margin-right: 1% !important;
+    }
+
+    &2{
+        margin-left: 1% !important;
     }
 }

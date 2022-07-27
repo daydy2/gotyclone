@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import '../sass/main.css'
 
-const Modal = () => {
+const ModalLogin = () => {
   const [input, setInput]= useState({
     email: '',
     passd: '',
@@ -73,4 +73,4 @@ const Modal = () => {
   )
 }
 
-export default Modal
+export default ModalLogin

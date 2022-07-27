@@ -1,6 +1,7 @@
 import React from 'react';
+import ModalReg from './ModalReg';
+// import ModalLogin from './ModalLogin';
 // import Mainpage from './Mainpage';
-import Modal from './Modal';
 // import Navbar from './Navbar';
 // import Sidebar from './Sidebar';
 
@@ -13,7 +14,8 @@ const LandingPage = () => {
       <Sidebar />
       <Mainpage />
     </section> */}
-    <Modal />
+    {/* <ModalLogin /> */}
+    <ModalReg />
         
     </>
   )
