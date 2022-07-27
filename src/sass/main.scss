@@ -4,49 +4,24 @@
 //ABSTRACTS
 @import './abstracts/mixins';
 @import './abstracts/variables';
+@import './abstracts/animations';
 
-.nav{
-    font-size: 2.3rem;
-    height: 6.8rem;
-    width: 100%;
-    color: $white;
-    background: $bg-big;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 2rem;
+//COMPONENTS-ICONS
+@import './components/icons';
 
-    &__logo{
-        padding-left: 4.5rem;
-    }
+//COMPONENT-SIDEBAR
+@import './components/sidebar';
 
-    &__logo-img{
-        width: 10rem;
-        height: 3.7rem;
-        padding-bottom: .1rem;
-    }
-    &__search{
-        
-        &-form{
-            background: $bg-small;
-            width: 65rem;
-            height: 3.5rem;
-            display: flex;
-            align-items: center;
-            padding: .4rem 1.5rem;
-            border-radius: 100px;
+//COMPONENT-MAINPAGE
+@import './components/mainpage';
 
-            & > input{
-                background: inherit;
-                border-style: none;
-                padding: .5rem;
+//COMPONENT-NAVBAR
+@import './components/navbar';
 
-                &:active, &:focus{
-                    border-style: none;
-                    outline: none;
-                    color: white;
-                }
-            }
-        }
-    }
-}
+//COMPONENT-LANDING-PAGE
+@import './components/landingpage';
+
+//TYPOGRAPHY
+@import './typography/typography';
+
+

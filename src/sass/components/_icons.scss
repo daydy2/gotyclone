@@ -1,0 +1,21 @@
+
+.fa{
+    &-magnifying-glass{
+        color: rgba($white, .3);
+        width:4rem;
+        
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &-icon{
+        margin-right: 1rem;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &-chess-queen{
+        margin-left: 10rem;
+    }
+}
