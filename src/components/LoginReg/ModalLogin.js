@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import '../sass/main.css'
+import '../../sass/main.css';
 
-const ModalLogin = () => {
+const ModalLogin = ({closeModal}) => {
   const [input, setInput]= useState({
     email: '',
     passd: '',
@@ -16,11 +16,18 @@ const ModalLogin = () => {
     
   }
 
-  return (
+  
+  
+  // if (!props.show){
+  //   return null
+  // }
+
+  return (    
     <>
       <main>
           <section className="sectionmodal">
-          <h4 className="sectionmodal__h4-modalHeader">Sign in to GotyTV</h4>
+          <h4 className="sectionmodal__h4-modalHeader">Sign in to Goty TV</h4>
+          
           <p className="sectionmodal__p-modalP">Just login and start streaming</p>
           <form action="/" className="modalForm" method='post' onSubmit={(e) => {e.preventDefault()}}>
 
@@ -64,7 +71,9 @@ const ModalLogin = () => {
             </div>
 
           </form>
-          
+          <div className="div__modal-close" onClick={closeModal}>
+            <i class="fa-solid fa-3x fa-circle-xmark" onClick={closeModal}></i>
+          </div>  
           
           </section>
       

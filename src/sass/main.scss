@@ -1,10 +1,11 @@
 //BASE
 @import './base/base';
+@import './base/animations';
+@import './base/typography';
 
 //ABSTRACTS
 @import './abstracts/mixins';
 @import './abstracts/variables';
-@import './abstracts/animations';
 
 //COMPONENTS-ICONS
 @import './components/icons';
@@ -24,7 +25,6 @@
 //COMPONENT_MODAL
 @import './components/modal';
 
-//TYPOGRAPHY
-@import './typography/typography';
+
 
 

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import '../sass/main.css'
+// import '../sass/main.css'
 
-const ModalReg = () => {
+const ModalReg = ({closeModal}) => {
     const [input, setInput]= useState({
         email: '',
         passd: '',
@@ -68,6 +68,9 @@ const ModalReg = () => {
                     </div>
 
                 </form>
+                <div className="div__modal-close" >
+                    <i class="fa-solid fa-3x fa-circle-xmark" onClick={closeModal}></i>
+                </div>
             </section>
         </main>
     </>

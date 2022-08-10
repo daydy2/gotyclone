@@ -1,12 +1,23 @@
-main{    
+main{   
+    position: relative;
+    background: rgba(128, 128, 128, 0.295);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    z-index: 2;
+    
+
     .sectionmodal{
-        margin: 3rem auto 0 auto;
+        position: absolute;
+        // margin: 3rem auto 0 auto;
+        top: 1rem;
+        left:calc(50% - 20rem);
         width: 40rem;
         color: $white;
         background: $bg-modal;
         padding: 1.5rem;
         border-radius: 1rem;
         font-family: 'Quicksand', sans-serif;
+        
 
         &__h4-modalHeader{
             font-family: inherit;
@@ -90,12 +101,23 @@ main{
         font-size: 1.6rem;
         border-radius: 1rem;
         margin-top: 1.2rem;
+        transition: all .4s;
+
+        &:hover{
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba($white, .18);
+    
+            &::after{
+                transform: scaleX(1.4) scaleY(1.6);
+                opacity: .3;
+            }
+        }
         
     }
 }
 
 .divor{
-    margin-top: 5.5rem;
+    margin-top: 2.5rem;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -146,15 +168,41 @@ div{
             &-second{
                 color: $bg-modalLogin;
                 font-weight: 600;
+
+                &:hover{
+                    cursor: pointer;
+                }
             }
         }
 
     }
 }
+.div__modal-close{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s ease-in;
+    position: absolute;
+    top: 1rem;
+    left: 34.5rem;
+    z-index: 1;
+
+    &:hover{
+        cursor: pointer;
+
+        & > .fa-circle-xmark{
+            color: gray;
+        }
+        
+    }
+}
 
 .nameInput{
     display: inline-block !important;
-    width: 48% !important;
+    width: 49% !important;
+    margin-bottom: 0 !important;
     
     &1{
         margin-right: 1% !important;

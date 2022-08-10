@@ -9,6 +9,41 @@ html {
   font-size: 62.5%;
 }
 
+@-webkit-keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.listLink {
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+.listLink:hover {
+  cursor: pointer;
+}
+
 .fa-magnifying-glass {
   color: rgba(255, 255, 255, 0.3);
   width: 4rem;
@@ -60,7 +95,7 @@ html {
 }
 
 .section__sidebar-listItem {
-  margin: 1rem 0 .5rem 0;
+  margin: .45rem 0 .5rem 0;
   padding: .7rem 1.5rem;
   border-left: .3rem solid transparent;
   border-radius: .2rem;
@@ -208,8 +243,18 @@ html {
   background: #171717;
 }
 
+main {
+  position: relative;
+  background: rgba(128, 128, 128, 0.295);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  z-index: 2;
+}
+
 main .sectionmodal {
-  margin: 3rem auto 0 auto;
+  position: absolute;
+  top: 1rem;
+  left: calc(50% - 20rem);
   width: 40rem;
   color: white;
   background: #454a57;
@@ -302,10 +347,25 @@ main .sectionmodal__p-modalP {
   font-size: 1.6rem;
   border-radius: 1rem;
   margin-top: 1.2rem;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.modalForm__button:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0 5px 20px rgba(255, 255, 255, 0.18);
+          box-shadow: 0 5px 20px rgba(255, 255, 255, 0.18);
+}
+
+.modalForm__button:hover::after {
+  -webkit-transform: scaleX(1.4) scaleY(1.6);
+          transform: scaleX(1.4) scaleY(1.6);
+  opacity: .3;
 }
 
 .divor {
-  margin-top: 5.5rem;
+  margin-top: 2.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -363,9 +423,42 @@ div .reg__span-second {
   font-weight: 600;
 }
 
+div .reg__span-second:hover {
+  cursor: pointer;
+}
+
+.div__modal-close {
+  width: 4rem;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .4s ease-in;
+  transition: .4s ease-in;
+  position: absolute;
+  top: 1rem;
+  left: 34.5rem;
+  z-index: 1;
+}
+
+.div__modal-close:hover {
+  cursor: pointer;
+}
+
+.div__modal-close:hover > .fa-circle-xmark {
+  color: gray;
+}
+
 .nameInput {
   display: inline-block !important;
-  width: 48% !important;
+  width: 49% !important;
+  margin-bottom: 0 !important;
 }
 
 .nameInput1 {
@@ -374,14 +467,5 @@ div .reg__span-second {
 
 .nameInput2 {
   margin-left: 1% !important;
-}
-
-.listLink {
-  font-size: 1.7rem;
-  font-weight: 300;
-}
-
-.listLink:hover {
-  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
